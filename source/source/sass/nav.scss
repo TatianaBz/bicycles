@@ -1,0 +1,126 @@
+ .navigation{
+   padding-left: 0;
+    & ul{
+      display: flex;
+      align-items:center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      min-height: 52px;
+      border-bottom:2px solid #ffffff;
+      margin-top: 10px;
+      padding: 0 25px;
+    }
+    & li{
+      list-style: none;
+    }
+    & a{
+      font-family: 'Open Sans';
+      font-weight: 300;
+      line-height: 25px;
+      font-size: 16px;
+      text-decoration: none;
+      text-align: center;
+      color:#ffffff;
+      margin: 0;
+      }
+      & a:focus,
+      a:visited{
+      opacity: 0.8;
+      }
+      & a:active{
+      opacity: 0.3;
+      }
+  }
+  .navigation__button{
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    z-index:0 ;
+    display: block;
+  }
+  @media (max-width: 1023px) {
+    .navigation{
+      position: absolute;
+      width: 320px;
+      min-height: 51px;
+      margin: 0 auto;
+      right: 0%;
+      background-color: #826550;
+
+    }
+    .navigation__closed{
+    position: absolute;
+  }
+  .navigation{
+       & ul{
+         position: absolute;
+         flex-direction: column;
+         width: 320px;
+         z-index: 1;
+         top: 51px;
+        }
+    }
+
+    .navigation__button{
+      position: absolute;
+      top: 0;
+      right: 0;
+         z-index: 2;
+      display: block;
+      width: 70px;
+      height: 50px;
+      background-color: #6a4d38;
+      cursor: pointer;
+      border: none;
+
+    &:hover,
+    &:active {
+      background-color: #624530;
+    }
+  }
+
+  .header__nav--closed .navigation__button::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    width: 36px;
+    height: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+  }
+  .header-nav--opened .navigation__button {
+    top: 0;
+    right: auto;
+    left: 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 18px;
+      width: 36px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+.close{
+  display: none;
+}
+  }
