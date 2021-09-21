@@ -1,0 +1,183 @@
+.page__type-bicycl{
+  width: 100%;
+  background-color:#f6f7f9;
+  padding-top: 140px;
+  padding-bottom: 150px;
+ }
+.type-bicycl__content{
+  width: 78%;
+  margin: 0px auto;
+  box-sizing: content-box;
+  text-align: center;
+}
+  .page__type-bicycl{
+    h2{
+      font-family: 'Open Sans';
+      font-weight: 600;
+      font-size: 30px;
+      font-style: normal;
+      margin: 0;
+      text-align: center;
+  }
+  h3{
+      font-family: 'Open Sans';
+      font-weight: 600;
+      font-size: 22px;
+      font-style: normal;
+      margin:15px 0 0 0;
+      text-align: center;
+  }
+  & ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 35px auto 0 auto;
+    padding-left: 0px;
+  }
+  & li{
+    position: relative;
+    width: 33%;
+    box-sizing:border-box;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 20px 14px 20px;
+    z-index: 0;
+     }
+    & img{
+      width:342px;
+      height: 510px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    & li:nth-child(2n) img{
+      width:342px;
+      height: 566px;
+      object-fit: cover;
+      margin-top: 35px;
+    }
+    & li:nth-child(3n-2)::after {
+      position:absolute;
+      content: "";
+      background: url("/img/ellipse 1.png");
+      background-image: -webkit-image-set(url('../img/ellipse 1.png') 1x,
+                                        url('../img/ellipse 1 2x.png') 2x);
+      width: 180px;
+      height: 180px;
+      top: calc(50% - 90px);
+      left: calc(90px - 50%);
+      z-index: -1;
+    }
+    & li:nth-child(3n)::before {
+      position:absolute;
+      content: "";
+      background: url("/img/ellipse 2.png");
+      background-image: -webkit-image-set(url('../img/ellipse 2.png') 1x,
+                                          url('../img/ellipse 2 2x.png') 2x);
+      width: 95px;
+      height: 95px;
+      top: calc(95px - 20%);
+      right: calc(95px - 40%);
+      z-index: 1;
+    }
+    & li:nth-child(3n-1)::after {
+      position:absolute;
+      content: "";
+      background: url("/img/rectangle 7.png");
+      background-image: -webkit-image-set(url('../img/rectangle 7.png') 1x,
+                        url('../img/rectangle 7 2x.png') 2x);
+      width: 47px;
+      height: 47px;
+      top: 88%;
+      left: 92%;
+      z-index: 2;
+    }
+    & li:nth-child(3n-1)::before {
+      position:absolute;
+      content: "";
+      background: url("/img/rectangle 7.png");
+      background-image: -webkit-image-set(url('../img/rectangle 7.png') 1x,
+                                        url('../img/rectangle 7 2x.png') 2x);
+      width: 47px;
+      height: 47px;
+      top: 4%;
+      left: -1%;
+      z-index: 3;
+    }
+}
+@media (max-width: 1023px) {
+ .type-bicycl__content{
+   width: 95%;
+ }
+.page__type-bicycl{
+
+  & ul{
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+ }
+ & li{
+   position: relative;
+   width: 45%;
+   box-sizing:border-box;
+   padding: 14px 20px 14px 20px;
+ }
+ & li:nth-child(3n-1)::after {
+display: none;
+}
+& li:nth-child(3n-1)::before {
+ display: none;
+}
+& li:nth-child(n) img{
+  width:270px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0;
+ }
+ & li:nth-child(3n-2)::after {
+  position:absolute;
+  content: "";
+  background: url("/img/ellipse 1.png");
+  background-image: -webkit-image-set(url('../img/ellipse 1.png') 1x,
+                                      url('../img/ellipse 1 2x.png') 2x);
+  object-fit: cover;
+  top: 45%;
+  left: 20%;
+  z-index: -1;
+}
+& li:nth-child(3n)::before {
+  position:absolute;
+  content: "";
+  background: url("/img/ellipse 2.png");
+  background-image: -webkit-image-set(url('../img/ellipse 2.png') 1x,
+                                       url('../img/ellipse 2 2x.png') 2x);
+  object-fit: cover;
+  top: -8%;
+  left: 63%;
+  z-index: 1;
+}
+}
+}
+@media (max-width: 767px) {
+  .type-bicycl__content{
+    width: 95%;
+  }
+  .page__type-bicycl{
+    margin-top: 50px;
+  }
+  & ul{
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+  }
+  & li{
+    width: 100%;
+    box-sizing:border-box;
+   padding: 14px 20px 14px 20px;
+   }
+}
