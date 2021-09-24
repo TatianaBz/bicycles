@@ -1,0 +1,157 @@
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.page__header {
+  margin-top: 0;
+}
+
+.header {
+  height: 825px;
+  background-image: url("../../img/imgbike-2.jpg");
+  background-image: -webkit-image-set(url("../img/imgbike-2.jpg") 1x, url("../img/imgbike-2_2x.jpg") 2x);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.header__content {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 264px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__previe {
+  width: 50%;
+  min-width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.header__previe img {
+  width: 68px;
+  height: 21px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.header__previe .header__slogan {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  text-align: left;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+.header__previe .header__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: left;
+  color: #ffffff;
+  opacity: 0.5;
+  padding: 0;
+  margin: 0;
+}
+
+.header__order {
+  width: 50%;
+  min-width: 360px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 1023px) {
+  .header__content {
+    width: 45%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .header__previe {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .header__slogan {
+    font-size: 26px;
+  }
+  .header__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__content {
+    width: 330px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__previe {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__previe p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .page {
+    max-width: 1023px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .page {
+    max-width: 767px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=first-page.css.map */
